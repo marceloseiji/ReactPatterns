@@ -1,9 +1,9 @@
 {
-  "name": "accSite",
+  "name": "ReactPatterns",
   "version": "1.0.0",
-  "description": "Psychology Site",
+  "description": "Sample repository for React Patterns examples",
   "main": "index.js",
-  "repository": "https://github.com/marceloseiji/accSite",
+  "repository": "https://github.com/marceloseiji/ReactPatterns",
   "author": "Marcelo Seiji",
   "license": "MIT",
   "scripts": {
