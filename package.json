@@ -1,9 +1,9 @@
 {
-  "name": "accSite",
+  "name": "ReactPatterns",
   "version": "1.0.0",
-  "description": "Psychology Site",
+  "description": "Sample repository for React Patterns examples",
   "main": "index.js",
-  "repository": "https://github.com/marceloseiji/accSite",
+  "repository": "https://github.com/marceloseiji/ReactPatterns",
   "author": "Marcelo Seiji",
   "license": "MIT",
   "scripts": {
@@ -18,7 +18,9 @@
     "prepare": "husky install",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "test:coverage": "jest --maxWorkers=25% --coverage"
+    "test:coverage": "jest --maxWorkers=25% --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
@@ -40,6 +42,14 @@
     "@babel/preset-typescript": "^7.22.5",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.1",
+    "@storybook/react": "^7.2.1",
+    "@storybook/react-webpack5": "^7.2.1",
+    "@storybook/testing-library": "^0.2.0",
     "@svgr/webpack": "^8.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -69,6 +79,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-testing-library": "^5.10.0",
     "file-loader": "^6.2.0",
     "html-loader": "^4.2.0",
@@ -83,11 +94,17 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
     "sass-loader": "^13.3.2",
+    "storybook": "^7.2.1",
     "style-loader": "^3.3.1",
     "styled-components": "^6.0.4",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }
